@@ -127,8 +127,7 @@
                 <boundary_condition>
                     <geometrical_set>square_1x1_geometry</geometrical_set>
                     <geometry>top</geometry>
-                    <type>Dirichlet</type>
-                    <component>1</component>
+                    <type>Pressure</type>
                     <parameter>dirichlet1</parameter>
                 </boundary_condition>
             </boundary_conditions>
