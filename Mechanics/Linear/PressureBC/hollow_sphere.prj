@@ -8,7 +8,7 @@
             <name>SD</name>
             <type>SMALL_DEFORMATION</type>
             <integration_order>2</integration_order>
-            <dimension>2</dimension>
+            <dimension>3</dimension>
 
             <constitutive_relation>
                 <type>LinearElasticIsotropic</type>
@@ -94,7 +94,7 @@
         <parameter>
             <name>displacement0</name>
             <type>Constant</type>
-            <values>0 0</values>
+            <values>0 0 0</values>
         </parameter>
         <parameter>
             <name>dirichlet0</name>
@@ -116,12 +116,12 @@
     <process_variables>
         <process_variable>
             <name>displacement</name>
-            <components>2</components>
+            <components>3</components>
             <order>1</order>
 
             <initial_condition>displacement0</initial_condition>
 
-            <!-- boundary_conditions>
+            <boundary_conditions>
                 <boundary_condition>
                     <geometrical_set>hollow_sphere</geometrical_set>
                     <geometry>inner_surface</geometry>
@@ -135,7 +135,7 @@
                     <type>Pressure</type>
                     <parameter>pressure_outside</parameter>
                 </boundary_condition>
-            </boundary_conditions -->
+            </boundary_conditions>
 
         </process_variable>
     </process_variables>
